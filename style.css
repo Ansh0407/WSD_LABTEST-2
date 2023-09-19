@@ -1,0 +1,51 @@
+body{
+    background-image:url(https://source.unsplash.com/1600x1000/?dog);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #eb0f0f;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px;
+}
+.card {
+  width: 600px;
+  border-radius: 14px;
+  border: 2px solid rgb(29, 3, 3);
+  padding: 20px;
+  margin: 10px auto;
+}
+.img-card {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+}
+#fetchDogButton {
+    margin: 20px 10px;
+  background-color: #eb0f0f;
+  border-radius: 12px;
+  border: none;
+  margin-right: 135px;
+  color: rgb(229, 226, 232);
+  padding: 10px 30px;
+  margin-left: 120px;
+}
+.random{
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

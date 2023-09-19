@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">WaggingTales</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">FeedBack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="output.html">Canine Catalog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1 class="text-center">FeedBack Form </h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                <form class="form" id="registrationForm" onsubmit="return validateForm();">
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
+                            placeholder="Name">
+                        <div id="nameError" class="invalid-feedback">Please enter a valid name</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Email">
+                        <div id="emailError" class="invalid-feedback">Enter a valid email</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="exampleInputComment" class="form-label">Leave a comment</label>
+                        <!-- Changed input type to textarea -->
+                        <textarea class="form-control" id="comment" placeholder="Comment Here"></textarea>
+                        <div id="commentError" class="invalid-feedback">Comment should be at least 10 words</div>
+                    </div>
+                   
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage">Enter valid input(s)</p>
+        </div>
+    </div>
+
+    <br><br>
+
+    <script src="feedback.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <footer class="bg-primary-subtle text-center text-lg-start">
+        <div class="text-center p-3" style="background-color: rgba(235, 216, 216, 0.2);">
+          © 2023 Copyright:<a class="text-dark" href="#">Ansh Bhandari</a>
+        </div>
+      </footer>
+</body>
+</html>
