@@ -1,9 +1,9 @@
 
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-}
-
+ body{
+        background-image:url(https://source.unsplash.com/1600x1000/?feedbackform);
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
 .container {
     background-color: #fff;
     padding: 20px;
@@ -14,6 +14,9 @@ body {
 .heading {
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid #dc1515;
 }
 
 .form {
